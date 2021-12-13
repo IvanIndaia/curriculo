@@ -116,7 +116,7 @@ h3 > p {
 /* =========================== FOURTH =========================== */
 @media screen and (max-width: 600px) {
     .interface {
-        background-color: rgba(175, 111, 111, 0.207);
+        background-color: rgba(214, 211, 211, 0.207);
         width: 95%;
         overflow: auto;
         margin: auto;
