@@ -10,6 +10,7 @@
 .interface {
     /*border: 1px solid red;*/
     box-shadow: 1px 2px 11px rgb(59, 59, 59);
+    border-radius: 7px;
     width: 67%;
     overflow: auto;
     margin: auto;
