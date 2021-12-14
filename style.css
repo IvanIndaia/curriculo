@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
 
 .body {
     
@@ -9,10 +10,10 @@
 .interface {
     /*border: 1px solid red;*/
 
-    width: 75%;
+    width: 67%;
     overflow: auto;
     margin: auto;
-    background-color: rgba(204, 203, 203, 0.035);
+    background-color: rgba(128, 128, 128, 0.076);
 }
 
 /* ========== CABEÇALHO ========== */
@@ -21,21 +22,22 @@
     /*border: 1px solid red;*/
 
     overflow: hidden;
-    width: 45%;
-    height: 200px;
+    width: 55%;
+    height: 250px;
     padding: 20px;
     float: left;
 }
 
 #nome {
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 #headerLeft > h3 {
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 23px;
+    font-size: 20px;
     margin: 10px;
+    padding: 0.1rem;
 }
 
 /* === Right ==== */
@@ -43,8 +45,8 @@
     /*border: 1px solid red;*/
     
     overflow: hidden;
-    width: 45%;
-    height: 200px;
+    width: 30%;
+    height: 250px;
     padding: 20px;
     float: right;
     text-align: right;
@@ -54,11 +56,16 @@
     width: 200px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ========== CORPO ========== */
 .corpo {
     padding: 25px;
     margin-top: 300px;
     display: block;
+    border-bottom: 1px solid grey;
 }
 
 .titulo {
@@ -74,7 +81,7 @@
 
 h3 > p {
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
-    font-family: 'PT Serif', serif;
+    font-family: 'Mukta', sans-serif;
     text-align: justify;
 }
 
@@ -83,45 +90,138 @@ h3 > p {
     /*border: 1px solid red;*/
 
     text-align: center;
-    padding: 15px;
+    padding: 17px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.131), rgb(224, 221, 221), rgba(255, 255, 255, 0.549));
     border-radius: 7px;
-    width: 64.5%;
-    margin: auto auto 8px auto;
+    width: 90.5%;
+    margin: 30px auto 8px auto;
     box-shadow: 1px  2px 10px black;
 }
 
-/* =========================== FISRT =========================== */
+/* ============================== FISRT ============================== */
 @media screen and (max-width: 1150px) {
     .interface {
-        background-color: black;
-        width: 80%;
+        background-color: rgba(128, 128, 128, 0.076);
         overflow: auto;
         margin: auto;
+        padding: 10px;
+    }
+    /* === Left ==== */
+    #headerLeft {
+        width: 50%;
+        padding: 5px;
+    }
+    /* === Right ==== */
+    #headerRight {
+        padding: 10px;
+        width: 45%;
+        height: 250px;
+    }
+    #inage {
+        width: 175px;
+        align-items: center;
+        text-align: center;
+        padding: 0.2px;
+    }
+    #nome {
+        font-family: 'Raleway', sans-serif;
+        font-size: 35px;
+    }
+    
+    #headerLeft > h3 {
+        font-family:  Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 19px;
+        margin: 3px;
+    }
+    /* ========== CORPO ========== */
+    .corpo {
+        padding: 8px;
+        margin-top: 275px;
+        display: block;
+        border-bottom: 1px solid grey;
+    }
+    h3 > p {
+        font-size: 18px;
+    }
+
+    .titulo {
+        background-color: rgba(128, 128, 128, 0.250);
+        text-align: center;
+        padding: 7px;
+        font-size: 20px;
+    }
+    /* ========== RODAPÉ ========== */
+    .rodape {
+        width: 97%;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 13px;
     }
 }
 
-/* =========================== SECOND =========================== */
+/* ============================== SECOND ============================== */
 @media screen and (max-width: 1000px) {
     .interface {
-        background-color: rgb(63, 3, 3);
-        width: 85%;
+        background-color: rgba(128, 128, 128, 0.076);
+        width: 75%;
         overflow: auto;
         margin: auto;
+        padding: 10px;
     }
-}
+    /* === Left ==== */
+    #headerLeft {
+        height: 200px;
+        width: 54%;
+        padding: 5px;
+    }
+    /* === Right ==== */
+    #headerRight {
+        height: 200px;
+        padding: 10px;
+        width: 35%;
+    }
+    #inage {
+        width: 125px;
+        align-items: center;
+        text-align: center;
+        padding: 0.2px;
+    }
+    #nome {
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+    }
+    
+    #headerLeft > h3 {
+        font-family:  Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 16px;
+        margin: 3px;
+    }
+    /* ========== CORPO ========== */
+    .corpo {
+        padding: 8px;
+        margin-top: 210px;
+        display: block;
+    }
+    h3 > p {
+        font-size: 16px;
+    }
 
-/* =========================== THIRD =========================== */
-@media screen and (max-width: 900px) {
-    .interface {
-        background-color: rgb(182, 6, 6);
+    .titulo {
+        background-color: rgba(128, 128, 128, 0.250);
+        text-align: center;
+        padding: 7px;
+        font-size: 17px;
+    }
+    /* ========== RODAPÉ ========== */
+    .rodape {
         width: 90%;
-        overflow: auto;
-        margin: auto;
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 13px;
     }
 }
 
-/* =========================== FOURTH =========================== */
+/* ============================== THIRD ============================== */
 @media screen and (max-width: 600px) {
     .interface {
         background-color: rgba(214, 211, 211, 0.207);
@@ -153,7 +253,7 @@ h3 > p {
     
     #headerLeft > h3 {
         font-family:  Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 13px;
+        font-size: 14px;
         margin: 3px;
     }
     /* ========== CORPO ========== */
@@ -161,10 +261,9 @@ h3 > p {
         padding: 8px;
         margin-top: 210px;
         display: block;
-        border-bottom: 1px solid grey;
     }
     h3 > p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .titulo {
