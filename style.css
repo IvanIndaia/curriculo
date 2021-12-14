@@ -22,7 +22,7 @@
 
     overflow: hidden;
     width: 45%;
-    height: 250px;
+    height: 200px;
     padding: 20px;
     float: left;
 }
@@ -44,10 +44,14 @@
     
     overflow: hidden;
     width: 45%;
-    height: 250px;
+    height: 200px;
     padding: 20px;
     float: right;
     text-align: right;
+}
+
+#inage {
+    width: 200px;
 }
 
 /* ========== CORPO ========== */
@@ -62,6 +66,10 @@
     text-align: center;
     padding: 7px;
     font-size: 22px;
+}
+
+#obj {
+    text-align: center;
 }
 
 h3 > p {
@@ -124,11 +132,19 @@ h3 > p {
     }
     /* === Left ==== */
     #headerLeft {
-        padding: 10px;
+        width: 54%;
+        padding: 5px;
     }
     /* === Right ==== */
     #headerRight {
         padding: 10px;
+        width: 35%;
+    }
+    #inage {
+        width: 125px;
+        align-items: center;
+        text-align: center;
+        padding: 0.2px;
     }
     #nome {
         font-family: 'Raleway', sans-serif;
@@ -137,13 +153,13 @@ h3 > p {
     
     #headerLeft > h3 {
         font-family:  Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 15px;
+        font-size: 13px;
         margin: 3px;
     }
     /* ========== CORPO ========== */
     .corpo {
         padding: 10px;
-        margin-top: 300px;
+        margin-top: 210px;
         display: block;
     }
     h3 > p {
